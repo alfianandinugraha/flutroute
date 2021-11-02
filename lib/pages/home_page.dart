@@ -48,11 +48,24 @@ class HomePage extends StatelessWidget {
             margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
             child: const Text("Hello world!"),
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.pushNamed(context, '/about');
-            },
-            child: const Text("About")
+          Row(
+            children: [
+              Container(
+                margin: const EdgeInsets.fromLTRB(0, 0, 15, 0),
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/about');
+                  },
+                  child: const Text("About")
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/contact');
+                },
+                child: const Text("Contact")
+              )
+            ],
           ),
           Container(
             width: 300,
