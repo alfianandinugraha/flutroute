@@ -14,7 +14,9 @@ class ContactPage extends StatelessWidget {
           Container(
             margin: const EdgeInsets.fromLTRB(0, 15, 0, 0),
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               child: const Text("Back"),
             ),
           )
