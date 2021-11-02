@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_routing/layouts/static_layout.dart';
+import 'package:flutter_routing/pages/user_page.dart';
 
 class Form extends StatefulWidget {
   const Form({Key? key}) : super(key: key);
@@ -24,8 +25,7 @@ class _FormState extends State<Form> {
         ),
         ElevatedButton(
           onPressed: () {
-            print(input);
-            Navigator.pushNamed(context, '/user');
+            Navigator.pushNamed(context, '/user', arguments: UserPageArguments(input, "23"));
           },
           child: const Text("Send Data")
         )
