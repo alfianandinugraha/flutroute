@@ -11,6 +11,14 @@ class UserPageArguments {
 class UserPage extends StatelessWidget {
   const UserPage({Key? key}) : super(key: key);
 
+  static void pushNamed(BuildContext context, UserPageArguments arguments) {
+    Navigator.pushNamed(
+      context,
+      '/user', 
+      arguments: arguments
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     ModalRoute<Object?>? args = ModalRoute.of(context);
