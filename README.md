@@ -1,6 +1,14 @@
-# flutter_routing
+# FlutRoute
 
-A new Flutter project.
+Example of routing in Flutter
+
+![Flutter Routing](https://res.cloudinary.com/alfianandinugraha/image/upload/v1635858736/flutter_route_qgffnx.gif)
+
+What I have learned ?
+
+- Push route to another page
+- Back to old route
+- Passing argument to another route
 
 ## Getting Started
 
