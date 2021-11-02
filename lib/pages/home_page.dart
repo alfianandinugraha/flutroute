@@ -6,8 +6,23 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const StaticLayout(
-      child: Text("Hello world!"),
+    return StaticLayout(
+      child: Column(
+        children: [
+          Container(
+            margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
+            child: const Text("Hello world!"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/about');
+            },
+            child: const Text(
+              "About"
+            )
+          )
+        ],
+      ),
     );
   }
 }
