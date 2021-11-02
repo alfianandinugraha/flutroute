@@ -25,6 +25,7 @@ class _FormState extends State<Form> {
         ElevatedButton(
           onPressed: () {
             print(input);
+            Navigator.pushNamed(context, '/user');
           },
           child: const Text("Send Data")
         )
